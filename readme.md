@@ -23,5 +23,6 @@ The length of the string is: 14
 
 <img src="https://github.com/ethan-josh/Exploring-Java-String-Methods/blob/main/images/Ex1.png"/>
 
-**Explanation**
+**Explanation:**
+
 The `length()` method returns the number of characters in the string, including spaces and punctuation. In "Hello, Cadets!", there are 14 characters, so the method returns the integer 14
