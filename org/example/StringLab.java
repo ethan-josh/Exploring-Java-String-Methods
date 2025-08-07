@@ -56,12 +56,16 @@ public class StringLab{
         // Example #7 ******************************
         String original = "I like cats. Cats are cute.";
         String replaced = original.replace("cats", "dogs");
-        System.out.println("Original: " + original);
-        System.out.println("Replaced: " + replaced);
+        // System.out.println("Original: " + original);
+        // System.out.println("Replaced: " + replaced);
         // *****************************************
 
         // Example #8 ******************************
-
+        String padded = "   Lots of spaces   ";
+        String trimmed = padded.trim();
+        System.out.println("Padded string length: " + padded.length());
+        System.out.println("Trimmed string: '" + trimmed + "'");
+        System.out.println("Trimmed string length: " + trimmed.length());
         // *****************************************
 	}
 }

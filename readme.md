@@ -218,3 +218,33 @@ Replaced: I like dogs. Cats are cute.
 The replace(CharSequence target, CharSequence replacement) method replaces every occurrence of the target character sequence with the replacement sequence. Importantly, strings in Java are immutable. This means the original string is not changed. Instead, a new string with the replacements is created and returned.
 
 ---
+
+### Exercise 8: trim() - Removing Whitespace
+
+**Code to run:**
+```
+public class StringLab {
+    public static void main(String[] args) {
+        String padded = "   Lots of spaces   ";
+        String trimmed = padded.trim();
+        System.out.println("Padded string length: " + padded.length());
+        System.out.println("Trimmed string: '" + trimmed + "'");
+        System.out.println("Trimmed string length: " + trimmed.length());
+    }
+}
+```
+
+**Predicted Output:**
+```
+Padded string length: 20
+Trimmed string: 'Lots of spaces'
+Trimmed string length: 14
+```
+
+**Actual Output:**
+
+<img src="https://github.com/ethan-josh/Exploring-Java-String-Methods/blob/main/images/Ex8.png"/>
+
+**Explanation:**
+
+The trim() method returns a new string with any leading and trailing whitespace removed. Notice that the whitespace within the string is not affected. This is very useful for cleaning up user input.
