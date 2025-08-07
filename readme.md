@@ -52,4 +52,4 @@ The character at index 5 is: l
 
 **Explanation:**
 
-The charAt(int index) method returns the character at the specified index. Remember that in Java, indexing starts at 0. Therefore, message.charAt(5) retrieves the character at the 6th position, which is the space ' '.
+The charAt(int index) method returns the character at the specified index. Remember that in Java, indexing starts at 0. Therefore, message.charAt(5) retrieves the character at the 6th position, which is the 'l'.
