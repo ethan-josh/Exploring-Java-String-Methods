@@ -186,3 +186,35 @@ public class StringLab {
 **Explanation:**
 
 The equals() method compares two strings for exact equality, and it is case-sensitive. "Java" and "java" are not the same, so it returns false. equals() returns true when comparing "Java" and "Java". The equalsIgnoreCase() method, however, compares two strings without considering their case. Therefore, it returns true when comparing "Java" and "java".
+
+---
+
+### Exercise 7: replace() - Replacing Characters
+
+**Code to run:**
+```
+public class StringLab {
+    public static void main(String[] args) {
+        String original = "I like cats. Cats are cute.";
+        String replaced = original.replace("cats", "dogs");
+        System.out.println("Original: " + original);
+        System.out.println("Replaced: " + replaced);
+    }
+}
+```
+
+**Predicted Output:**
+```
+Original: I like cats. Cats are cute.
+Replaced: I like dogs. Cats are cute.
+```
+
+**Actual Output:**
+
+<img src="https://github.com/ethan-josh/Exploring-Java-String-Methods/blob/main/images/Ex7.png"/>
+
+**Explanation:**
+
+The replace(CharSequence target, CharSequence replacement) method replaces every occurrence of the target character sequence with the replacement sequence. Importantly, strings in Java are immutable. This means the original string is not changed. Instead, a new string with the replacements is created and returned.
+
+---
