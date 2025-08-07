@@ -148,3 +148,41 @@ Index of 'cat': -1
 **Explanation:**
 
 The indexOf() method returns the starting index of the first occurrence of the specified character or substring. If the character or substring is not found, it returns -1. In our example, "fox" starts at index 16, and 'z' is at index *37*. Since "cat" does not appear in the string, its index is reported as -1.
+
+---
+
+### Exercise 6: equals() vs. equalsIgnoreCase() - Comparing Strings
+
+**Code to run:**
+```
+public class StringLab {
+    public static void main(String[] args) {
+        String str1 = "Java";
+        String str2 = "java";
+        String str3 = "Java";
+
+        boolean isEqual1 = str1.equals(str2);
+        boolean isEqual2 = str1.equals(str3);
+        boolean isEqualIgnoreCase = str1.equalsIgnoreCase(str2);
+
+        System.out.println("\"Java\".equals(\"java\"): " + isEqual1);
+        System.out.println("\"Java\".equals(\"Java\"): " + isEqual2);
+        System.out.println("\"Java\".equalsIgnoreCase(\"java\"): " + isEqualIgnoreCase);
+    }
+}
+```
+
+**Predicted Output:**
+```
+"Java".equals("java"): false
+"Java".equals("Java"): true
+"Java".equalsIgnoreCase("java"): true
+```
+
+**Actual Output:**
+
+<img src="https://github.com/ethan-josh/Exploring-Java-String-Methods/blob/main/images/Ex6.png"/>
+
+**Explanation:**
+
+The equals() method compares two strings for exact equality, and it is case-sensitive. "Java" and "java" are not the same, so it returns false. equals() returns true when comparing "Java" and "Java". The equalsIgnoreCase() method, however, compares two strings without considering their case. Therefore, it returns true when comparing "Java" and "java".
