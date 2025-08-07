@@ -1,6 +1,7 @@
 # Name: Ethan Joshua Camingao
 ## Exploring Java String Methods
 
+---
 
 ### Exercise 1: length() - Finding the String's Size
 
@@ -27,6 +28,7 @@ The length of the string is: 14
 
 The `length()` method returns the number of characters in the string, including spaces and punctuation. In "Hello, Cadets!", there are 14 characters, so the method returns the integer 14
 
+---
 
 ### Exercise 2: charAt() - Accessing a Character
 
@@ -54,6 +56,7 @@ The character at index 5 is: l
 
 The charAt(int index) method returns the character at the specified index. Remember that in Java, indexing starts at 0. Therefore, message.charAt(5) retrieves the character at the 6th position, which is the 'l'.
 
+---
 
 ### Exercise 3: substring() - Extracting a Part of a String
 
@@ -80,3 +83,68 @@ The extracted substring is: is
 **Explanation:**
 
 The substring(int beginIndex, int endIndex) method extracts a new string from the original one. It starts at beginIndex and goes up to, but does not include, endIndex. So, statement.substring(5, 7) extracts the characters at index 5 and 6, which are "is".
+
+---
+
+### Exercise 4: toUpperCase() and toLowerCase() - Changing Case
+
+**Code to run:**
+```
+public class StringLab {
+    public static void main(String[] args) {
+        String mixedCase = "This Is A Test";
+        String upper = mixedCase.toUpperCase();
+        String lower = mixedCase.toLowerCase();
+        System.out.println("Uppercase: " + upper);
+        System.out.println("Lowercase: " + lower);
+    }
+}
+```
+
+**Predicted Output:**
+```
+Uppercase: THIS IS A TEST
+Lowercase: this is a test
+```
+
+**Actual Output:**
+
+<img src="https://github.com/ethan-josh/Exploring-Java-String-Methods/blob/main/images/Ex4.png"/>
+
+**Explanation:**
+
+The toUpperCase() method converts all characters in the string to uppercase. Conversely, the toLowerCase() method converts all characters to lowercase. These methods are useful for case-insensitive comparisons.
+
+---
+
+### Exercise 5: indexOf() - Finding a Character or Substring
+
+**Code to run:**
+```
+public class StringLab {
+    public static void main(String[] args) {
+        String sentence = "The quick brown fox jumps over the lazy dog.";
+        int indexOfFox = sentence.indexOf("fox");
+        int indexOfZ = sentence.indexOf('z');
+        int indexOfCat = sentence.indexOf("cat");
+        System.out.println("Index of 'fox': " + indexOfFox);
+        System.out.println("Index of 'z': " + indexOfZ);
+        System.out.println("Index of 'cat': " + indexOfCat);
+    }
+}
+```
+
+**Predicted Output:**
+```
+Index of 'fox': 16
+Index of 'z': 37
+Index of 'cat': -1
+```
+
+**Actual Output:**
+
+<img src="https://github.com/ethan-josh/Exploring-Java-String-Methods/blob/main/images/Ex5.png"/>
+
+**Explanation:**
+
+The indexOf() method returns the starting index of the first occurrence of the specified character or substring. If the character or substring is not found, it returns -1. In our example, "fox" starts at index 16, and 'z' is at index *37*. Since "cat" does not appear in the string, its index is reported as -1.
